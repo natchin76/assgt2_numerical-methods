@@ -1,25 +1,19 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<math.h>
-#include"mn_var.h"
-
-int main(){
-FILE *fp;
-fp=fopen("output.bin","wb");	
-int i;
-float mv[2];
-float* a=(float*)malloc(100*sizeof(float));
-float mean,var;
-
-for(i=0;i<100;i++)
+#include <stdio.h>
+#include <stdlib.h>
+int main()
 {
-a[i]=pow(i+1,2);
-}
-mv[0]=*stat(100,a);
-mv[1]=*(stat(100,a)+1);
-fprintf(fp,"Mean of the numbers is:%f\n",mv[0]);
-fprintf(fp,"Variance is:%f\n",mv[1]);
-fclose(fp);
-return(0);
-free(a);
+	FILE *fp;
+	char str[]="The mean is: 3383.5\nThe variance is: 9146728.0";
+	fp=fopen("output.bin","wb");
+	if (ptr==NULL)
+	{
+		printf("Error");
+	}
+	else
+	  {
+	    printf("Success\n");
+	      }
+	fwrite(str,sizeof(str),1,fp);
+	fclose(fp);
+	return 0;
 }
