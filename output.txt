@@ -1,0 +1,2 @@
+Mean of the numbers is:3383.500000
+Variance is:9146729.000000
